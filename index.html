@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="jquery-3.5.1.js"></script>
+        <script type="text/javascript">
+         $(document).ready(function(e) {
+             $('.recovery').click(function(){
+               $('#modal').fadeIn(500); 
+
+               $(".modal-box-conteudo").load("recovery.htm");
+             });
+             $('.fechar').click(function(){
+               $('#modal').fadeOut(500);
+            });
+               
+         });
+        </script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <h1>Tela de Login</h1>  
+        <form action="listagem.php" method="POST">
+            <label>E-mail</label>
+            <input type="email" name="email" required/><br>
+             <label>Senha</label>
+             <input type="password"   minlength="3"maxlength="8" required/><br>
+             <button type="submit" onclick="window.location.href='listagem.php'")>Submeter</button><br>
+            </form>
+        
+        
+        <a href="#recovery" class="recovery">Recuperar senha</a>
+             <div id="modal">
+                 <div class="modal-box">
+                     <div class="modal-box-conteudo">
+                         <div class="fechar">Cancelar</div>
+                     </div>
+                 </div>
+                </div>
+            </body>
+</html>

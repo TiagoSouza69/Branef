@@ -1,0 +1,11 @@
+/*
+  *Tela de login sem mecanismo de autenticação.
+  *Acionando o link de recuperação de senha é aberto um modal contendo o campo email.  
+  *Logando com qualquer usuario/senha o usuário é levado para a página listagem.php onde a mesma possui
+  links de ancoragem para a empresa ao qual lançou o desafio, o nome do respectivo usuário que logou, um
+  sidebar, uma tabela com dados já inseridos e clicando no botão submeter o usuário poderá procurar qualquer
+  dado constando na tabela e nesta mesma tábela existem dois links: remover, ao qual apaga a procura na tabela
+  e detalhe que possui ancoragem com a página detalhe.
+  *A página detalhe possui um pequeno formulário onde o cliente poderá cadastrar determinados campos e ao salvar
+  será direcionado a página salvo contendo a informação requerida no formulário.
+*/
